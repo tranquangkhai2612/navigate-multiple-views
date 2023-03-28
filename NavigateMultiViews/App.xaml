@@ -1,0 +1,19 @@
+﻿<Application
+    x:Class="NavigateMultiViews.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:NavigateMultiViews.ViewModel"
+    xmlns:view="clr-namespace:NavigateMultiViews.View"
+    StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type local:UserControl1ViewModel}">
+            <view:UserControl1 />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type local:UserControl2ViewModel}">
+            <view:UserControl2 />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type local:UserControl3ViewModel}">
+            <view:UserControl3 />
+        </DataTemplate>
+    </Application.Resources>
+</Application>
